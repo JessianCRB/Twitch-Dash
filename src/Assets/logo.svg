@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="73" viewBox="0 0 132 73">
+  <g id="logo" transform="translate(-220.309 -51.211)">
+    <g id="Retângulo_85" data-name="Retângulo 85" transform="translate(220.309 51.211)" fill="none" stroke="#fff" stroke-width="5">
+      <rect width="132" height="73" rx="20" stroke="none"/>
+      <rect x="2.5" y="2.5" width="127" height="68" rx="17.5" fill="none"/>
+    </g>
+    <path id="Caminho_23" data-name="Caminho 23" d="M269,85.321V111.2" transform="translate(3.042 -7.294)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <path id="Caminho_24" data-name="Caminho 24" d="M251.665,90.748,267.1,84.6,284.6,77.643" transform="translate(5.086 -6.671)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <path id="Caminho_25" data-name="Caminho 25" d="M295,106.542l20.693-13.118L295,83.7" transform="translate(-0.907 -7.385)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
