@@ -21,6 +21,14 @@
   color: #fff;
 }
 
+.streamers {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  padding-left: 25rem;
+}
+
 .login::after {
   content: '';
   display: inline-block;
