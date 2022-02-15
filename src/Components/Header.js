@@ -5,7 +5,6 @@ import { ReactComponent as Logo } from '../Assets/logo.svg';
 //import { UserContext } from '../UserContext';
 
 const Header = () => {
-  //const context = React.useContext(UserContext);
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>

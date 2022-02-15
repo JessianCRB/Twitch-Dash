@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Login from './Components/Login/Login';
 import { UserStorage } from './UserContext';
 import Streamers from './Components/Streamers';
+import NotFound from './Components/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/streamers" element={<Streamers />} />
             <Route path="/login/*" element={<Login />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
