@@ -14,13 +14,16 @@ const LoginForm = () => {
     event.preventDefault();
     console.log('Login realizado! ');
   }
+
   return (
     <section className="animeLeft">
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
-        <Button>Entrar</Button>
+        <Button onClick={(event) => (window.location.href = '/streamers')}>
+          Entrar
+        </Button>
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a Senha?

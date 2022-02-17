@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.introBG {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 48px 24px 12px;
+  vertical-align: middle;
+}
+
+.homeWeapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.homeTitle {
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #6441a5;
+}
+
+.homeText {
+  border-top: 2px solid #6441a5;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+  padding-top: 12px;
+  text-align: center;
+  width: 60%;
+}
+
+.areaSeta {
+  text-align: center;
+}
+
+.seta {
+  background: url(../Assets/seta2.svg) no-repeat center center;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-top: 10rem;
+  width: 25px;
+  height: 25px;
+}

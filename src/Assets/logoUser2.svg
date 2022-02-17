@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="logoUser2" transform="translate(-1319.323 -54.295)">
+    <g id="Elipse_1" data-name="Elipse 1" transform="translate(1319.323 54.295)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.5" fill="none"/>
+    </g>
+    <g id="usuario" transform="translate(1322.104 56.023)">
+      <path id="Caminho_21" data-name="Caminho 21" d="M5.945,4.417A1.472,1.472,0,1,0,4.472,2.945,1.472,1.472,0,0,0,5.945,4.417Zm0,1.472A2.945,2.945,0,1,0,3,2.945,2.945,2.945,0,0,0,5.945,5.889Z" transform="translate(-0.792)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_22" data-name="Caminho 22" d="M5.153,10.472a3.681,3.681,0,0,0-3.681,3.681.736.736,0,0,1-1.472,0,5.153,5.153,0,1,1,10.306,0,.736.736,0,0,1-1.472,0A3.681,3.681,0,0,0,5.153,10.472Z" transform="translate(0 -2.375)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
