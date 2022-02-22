@@ -3,16 +3,15 @@
 .introBG {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding: 48px 24px 12px;
-  vertical-align: middle;
+  height: 60vh;
+  padding: 48px 24px 35px;
 }
 
 .homeWeapper {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100;
+  /* height: 100; */
   justify-content: center;
   margin: 0 auto;
   max-width: 940px;
@@ -29,6 +28,7 @@
 
 .homeText {
   border-top: 2px solid #6441a5;
+  color: #7a50c8;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 24px;
@@ -39,15 +39,69 @@
 
 .areaSeta {
   text-align: center;
+  max-height: 10rem;
 }
 
 .seta {
   background: url(../Assets/seta2.svg) no-repeat center center;
   border: 0;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding-top: 10rem;
   width: 25px;
   height: 25px;
+}
+
+.streamersBG {
+  background-color: #a270ff;
+  box-shadow: inset 0 40px #fff, inset 0 -40px #fff;
+}
+
+.streamersInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 101px;
+}
+
+.imagem {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.setaCont {
+  background: url('../Assets/dec.svg') no-repeat bottom right;
+  padding-right: 14rem;
+}
+
+.graficosBG {
+  padding-top: 100px;
+}
+
+@media (max-width: 1000px) {
+  .streamersBG {
+    box-shadow: initial;
+  }
+  .streamersInfo {
+    grid-template-columns: 1fr;
+    height: 800px;
+  }
+  .imagem {
+    display: none;
+  }
+  .conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-self: center;
+    text-align: center;
+  }
+  .setaCont {
+    display: none;
+  }
 }

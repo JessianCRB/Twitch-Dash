@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   padding-top: 7rem;
@@ -53,6 +53,7 @@ a {
 }
 
 .dashContainer {
+  box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
