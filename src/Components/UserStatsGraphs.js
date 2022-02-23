@@ -6,37 +6,36 @@ const UserStatsGraphs = () => {
   return (
     <section className={`${styles.graph} animeLeft`}>
       <div className={styles.graphItem}>
-        <VictoryChart>
+        <VictoryChart domainPadding={{ x: 20 }}>
           <VictoryBar
+            horizontal
             alignment="start"
+            animate={{
+              duration: 2000,
+              onLoad: {
+                duration: 1000,
+              },
+            }}
+            style={{
+              data: {
+                fill: '#6441A5',
+              },
+            }}
             data={[
               {
-                x: 'teste',
+                x: '1',
                 y: 100,
               },
               {
-                x: 'teste2',
+                x: '2',
                 y: 6,
               },
             ]}
-          ></VictoryBar>
+          />
         </VictoryChart>
       </div>
       <div className={styles.graphItem}>
         <VictoryPie
-          padding={{ top: 20, bottom: 20, left: 80, left: 80 }}
-          style={{
-            data: {
-              fillOpacity: 0.9,
-              stroke: '#fff',
-              strokeWidth: 2,
-            },
-            labels: {
-              fontSize: 14,
-              fill: '#6441A5',
-            },
-          }}
-          innerRadius={50}
           data={[
             {
               x: 'teste',
@@ -46,7 +45,23 @@ const UserStatsGraphs = () => {
               x: 'teste2',
               y: 6,
             },
+            {
+              x: 'teste3',
+              y: 25,
+            },
+            {
+              x: 'teste4',
+              y: 13,
+            },
+            {
+              x: 'teste5',
+              y: 98,
+            },
           ]}
+          animate={{ easing: 'exp' }}
+          width={250}
+          height={250}
+          innerRadius={50}
         />
       </div>
     </section>

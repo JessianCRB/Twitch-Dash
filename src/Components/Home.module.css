@@ -85,7 +85,7 @@
   padding-top: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .streamersBG {
     box-shadow: initial;
   }
