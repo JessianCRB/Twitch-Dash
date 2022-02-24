@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './UserStatsGraphs.module.css';
 import { VictoryPie, VictoryChart, VictoryBar } from 'victory';
 
+const graphicColor = ['#388087', '#6fb3b8', '#badfe7']; // Colors
+const wantedGraphicData = [
+  {
+    x: 'Hayashii',
+    y: 7,
+  },
+  {
+    x: 'Gaules',
+    y: 6,
+  },
+  {
+    x: 'Alanzoka',
+    y: 6,
+  },
+]; // Data that we want to display
+const defaultGraphicData = [{ y: 0 }, { y: 0 }, { y: 100 }];
+
 const UserStatsGraphs = () => {
+  const [graphicData, setGraphicData] = useState(defaultGraphicData);
+
+  useEffect(() => {
+    setGraphicData(wantedGraphicData); // Setting the data that we want to display
+  }, []);
+
   return (
     <section className={`${styles.graph} animeLeft`}>
       <div className={styles.graphItem}>
-        <VictoryChart domainPadding={{ x: 20 }}>
+        <span style={{ color: '#6441A5' }}>Viewers:</span>
+        <VictoryChart
+          padding={{ top: 100, bottom: 100, left: 100, right: 100 }}
+          height={500}
+          width={500}
+        >
           <VictoryBar
             horizontal
             alignment="start"
@@ -23,11 +51,15 @@ const UserStatsGraphs = () => {
             }}
             data={[
               {
-                x: '1',
-                y: 100,
+                x: 'Hayashii',
+                y: 7,
               },
               {
-                x: '2',
+                x: 'Gaulês',
+                y: 6,
+              },
+              {
+                x: 'Alanzoka',
                 y: 6,
               },
             ]}
@@ -35,32 +67,14 @@ const UserStatsGraphs = () => {
         </VictoryChart>
       </div>
       <div className={styles.graphItem}>
+        <span style={{ color: '#6441A5' }}>Horas assistidas:</span>
         <VictoryPie
-          data={[
-            {
-              x: 'teste',
-              y: 100,
-            },
-            {
-              x: 'teste2',
-              y: 6,
-            },
-            {
-              x: 'teste3',
-              y: 25,
-            },
-            {
-              x: 'teste4',
-              y: 13,
-            },
-            {
-              x: 'teste5',
-              y: 98,
-            },
-          ]}
+          padding={{ top: 85, bottom: 85, left: 85, right: 85 }}
           animate={{ easing: 'exp' }}
-          width={250}
-          height={250}
+          data={graphicData}
+          width={400}
+          height={400}
+          colorScale={graphicColor}
           innerRadius={50}
         />
       </div>
