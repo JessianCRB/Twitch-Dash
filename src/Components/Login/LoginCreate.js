@@ -2,6 +2,7 @@ import React from 'react';
 import useForm from '../../Hooks/useForm';
 import Button from '../Forms/Button';
 import Input from '../Forms/Input';
+import Head from '../Head';
 
 const LoginCreate = () => {
   const username = useForm();
@@ -15,6 +16,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Cadastre-se" description="Espaço para criar novas contas." />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />

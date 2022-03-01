@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Head from './Head';
 import styles from './Home.module.css';
 import UserStatsGraphs from './UserStatsGraphs';
 
@@ -11,6 +12,10 @@ const Home = () => {
 
   return (
     <>
+      <Head
+        title="Home"
+        descriptions="Página inicial do site, que contem informações sobre o mundo dos streams."
+      />
       <section className={`${styles.introBG} animeTop container`}>
         <div className={styles.homeWeapper}>
           <h1 className={styles.homeTitle}>
@@ -25,9 +30,7 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.areaSeta}>
-          <button onClick={handleClick} className={styles.seta}>
-            <svg role="img" className={styles.iconSeta}></svg>
-          </button>
+          <button onClick={handleClick} className={styles.seta}></button>
         </div>
       </section>
 
@@ -59,10 +62,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section ref={titleRef}>
         <div className={`${styles.graficosBG}`}>
           <div className={`${styles.homeWeapper}  dashContainer`}>
-            <h1 ref={titleRef} className={styles.homeTitle}>
+            <h1 className={styles.homeTitle}>
               <span>Lorem ipsum dolor sit amet</span>
             </h1>
             <p className={styles.homeText}>

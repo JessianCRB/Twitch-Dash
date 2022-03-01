@@ -38,8 +38,7 @@
 }
 
 .areaSeta {
-  text-align: center;
-  max-height: 10rem;
+  align-self: center;
 }
 
 .seta {

@@ -12,7 +12,7 @@ const graphicColor = [
   '#5b74fb',
   '#76e0fb',
   '#519404',
-]; // Colors
+];
 const wantedGraphicData = [
   {
     x: 'Maethe',
@@ -39,7 +39,7 @@ const wantedGraphicData = [
     y: 146,
   },
   {
-    x: 'Gaulês',
+    x: 'Gaules',
     y: 712,
   },
   {
@@ -50,7 +50,7 @@ const wantedGraphicData = [
     x: 'Casimito',
     y: 140,
   },
-]; // Data that we want to display
+];
 const defaultGraphicData = [{ y: 0 }, { y: 0 }, { y: 100 }];
 
 const UserStatsGraphs = () => {
@@ -109,7 +109,7 @@ const UserStatsGraphs = () => {
                 y: 20835,
               },
               {
-                x: 'Gaulês',
+                x: 'Gaules',
                 y: 20947,
               },
               {

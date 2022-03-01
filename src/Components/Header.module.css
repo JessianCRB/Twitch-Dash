@@ -46,3 +46,9 @@
   position: relative;
   top: 3px;
 }
+
+/* @media (max-width: 415px) {
+  .header {
+    width: 72%;
+  }
+} */

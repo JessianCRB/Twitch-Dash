@@ -1,14 +1,20 @@
 import React from 'react';
 import styles from './Streamers.module.css';
+import Head from './Head';
 import { ReactComponent as Coracao } from '../Assets/coração.svg';
 import { ReactComponent as Mao } from '../Assets/mão.svg';
 
 const Streamers = () => {
   return (
     <div
-      className="container"
+      className="container animeTop"
       style={{ paddingTop: '95px', paddingBottom: '95px' }}
     >
+      <Head
+        title="Streamers"
+        descriptiion="Cards dos streamers com a sua respectiva quantidade de followers e se é parceiro ou afiliado."
+      />
+
       <div className={styles.streamersGrid}>
         <div className={styles.cardsStream}>
           <div className={styles.avatar}>
@@ -29,7 +35,7 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
               355.25k
             </div>
             <div className={styles.info2}>
@@ -64,7 +70,7 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
               2,25M
             </div>
             <div className={styles.info2}>
@@ -99,7 +105,9 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>3,3M</div>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
+              3,3M
+            </div>
             <div className={styles.info2}>
               <svg
                 className={`${styles.svg1} ${styles.svg2}`}
@@ -132,7 +140,7 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
               1,97M
             </div>
             <div className={styles.info2}>
@@ -167,7 +175,7 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
               436,9k
             </div>
             <div className={styles.info2}>
@@ -202,7 +210,7 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
               5,55M
             </div>
             <div className={styles.info2}>
@@ -237,7 +245,9 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>627k</div>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
+              627k
+            </div>
             <div className={styles.info2}>
               <svg
                 className={`${styles.svg1} ${styles.svg2}`}
@@ -270,7 +280,9 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>401k</div>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
+              401k
+            </div>
             <div className={styles.info2}>
               <svg
                 className={`${styles.svg1} ${styles.svg2}`}
@@ -303,7 +315,9 @@ const Streamers = () => {
             <svg className={`${styles.svg1} ${styles.svg2}`} role="img">
               <Coracao />
             </svg>
-            <div style={{ textAlign: 'center', marginRight: '12px' }}>2,9M</div>
+            <div className={styles.infoValor} style={{ textAlign: 'center' }}>
+              2,9M
+            </div>
             <div className={styles.info2}>
               <svg
                 className={`${styles.svg1} ${styles.svg2}`}
